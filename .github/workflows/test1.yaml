@@ -7,5 +7,5 @@ jobs:
     run-on: ubuntu-lastest
 
     steps:
-    - name: Hola mundo
+    - name: Hola Mundo
       run: echo "Hola Mundo"      
