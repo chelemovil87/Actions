@@ -1,27 +1,28 @@
+---
 name: Primer Workflow
-
-on: [push]
-
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 jobs:
-  hola: 
+  hola:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Hola Mundo
-      run: echo "Hola Mundo"  
-
-    - name: touch file
-      run: touch hola.txt      
-
-    - name: Set text
-      run: echo "Hola Mundo" >> hola.txt      
-
-    - name: Read file
-      run: cat hola.txt
-  
+      - name: Hola Mundo
+        run: echo "Hola Mundo"
+      - name: touch file
+        run: touch hola.txt
+      - name: Set text
+        run: echo "Hola Mundo" >> hola.txt
+      - name: Read file
+        run: cat hola.txt
   other:
     runs-on: ubuntu-latest
-    needs: [hola]
+    needs:
+      - hola
     steps:
-    - name: Ls
-      run: ls -al 
+      - name: Ls
+        run: ls -al
