@@ -21,6 +21,11 @@ jobs:
       - name: Node Version
         run: node --version
         
+      - name: Php
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+        
       # - name: Curl
       #   run: |
       #     chmod +x script.sh
