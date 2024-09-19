@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Reutilizar Actions
-        users: ./.github/actions/nueva-accion
+        uses: ./.github/actions/nueva-accion
 
       - name: multiline
         run: |
