@@ -12,6 +12,8 @@ jobs:
 
       - name: Reutilizar Actions
         uses: ./.github/actions/nueva-accion
+        with:
+          message: "Jose Eduardo"
 
       - name: multiline
         run: |
