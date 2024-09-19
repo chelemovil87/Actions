@@ -15,5 +15,5 @@ runs:
       run: echo "Hola Mundo"
       shell: bash
     - name: Hola input
-      run: echo "Hola $ {{inputs.message}}"
+      run: echo "Hola ${{inputs.message}}"
       shell: bash
