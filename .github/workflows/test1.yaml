@@ -1,6 +1,6 @@
 name: Primer Workflow
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   hola: 
