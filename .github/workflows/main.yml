@@ -10,6 +10,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Reutilizar Actions
+        users: ./.github/actions/nueva-accion
+        shell: bash
+
       - name: multiline
         run: |
           echo "Que tal Mundo" >> hola.txt

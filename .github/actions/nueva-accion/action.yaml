@@ -1,0 +1,10 @@
+name: "Nueva Accion"
+desciption: "Test para nueva accion"
+
+runs:
+  using: "composite"
+
+  steps:
+    - name: Hola Mundo
+      run: echo "Hola Mundo"
+      shell: bash
