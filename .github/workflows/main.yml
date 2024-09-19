@@ -12,7 +12,6 @@ jobs:
 
       - name: Reutilizar Actions
         users: ./.github/actions/nueva-accion
-        shell: bash
 
       - name: multiline
         run: |
