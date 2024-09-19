@@ -1,0 +1,26 @@
+key: Hola Mundo
+
+person: 
+  name: John
+  age: 23
+  city: Cordoba
+  items:
+    - item1
+    - item2
+    - item3
+
+  item2:
+    - item1: hola
+    - item2: que tal 
+    - item3: adios
+
+#scripts multilinea
+script: >
+  hola
+  hola
+  hola
+
+#scripts multilinea con operador or
+script2: |
+  tounch hola.txt
+  echo "Hola";

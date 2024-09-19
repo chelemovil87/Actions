@@ -1,0 +1,11 @@
+name: Primer Workflow
+
+on: [push]
+
+jobs:
+  hola: 
+    run-on: ubuntu-lastest
+
+    steps:
+    - name: Hola mundo
+      run: echo "Hola Mundo"      
