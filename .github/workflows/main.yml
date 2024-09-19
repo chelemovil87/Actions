@@ -1,0 +1,14 @@
+name: Main
+
+on: [push]
+
+jobs: 
+  test-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: multiline
+        run: |
+          echo "Que tal Mundo" >> hola.txt
+          cat hola.txt
+
