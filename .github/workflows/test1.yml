@@ -6,14 +6,9 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest
 
-    services:
-      mysql:
-        image: mysql:5.7
-        env:
-          MYSQL_ROOT_PASSWORD: example
-        ports:
-          - 3306:3306 
-    
+    env:
+      MY_VAR: Prueba de mi variable
+
     steps:
-      - name: Test Mysql
-        run: ls
+      - name: Test env
+        run: echo "Valor: $MY_VAR"
